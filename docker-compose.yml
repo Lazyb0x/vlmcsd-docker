@@ -5,6 +5,8 @@ services:
     build: .
     ports:
       - "1688:1688"
+    environment: 
+      - TZ=Asia/Shanghai
     volumes:
       - ${PWD}/log.txt:/root/log.txt
     restart: always
