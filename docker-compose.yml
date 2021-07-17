@@ -5,4 +5,6 @@ services:
     build: .
     ports:
       - "1688:1688"
+    volumes:
+      - ${PWD}/log.txt:/root/log.txt
     restart: always
